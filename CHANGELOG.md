@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.3...1.1.0) (2023-03-17)
+
+
+### Features
+
+* add main and prod deploy ([c5c8113](https://github.com/sfat/semantic-release-spring-boot-playground/commit/c5c811348ec75b829df8d15bd8d8850ef56bc7ac))
+
 ## [1.0.3](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.2...1.0.3) (2023-03-17)
 
 
