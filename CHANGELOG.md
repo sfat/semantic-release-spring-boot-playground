@@ -1,3 +1,10 @@
+# [1.1.0-main.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.1-main.1...1.1.0-main.1) (2023-03-17)
+
+
+### Features
+
+* new feature ([8aae736](https://github.com/sfat/semantic-release-spring-boot-playground/commit/8aae73614137c1d79bda2c14cee8f4a611554c90))
+
 ## [1.0.1-main.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.0...1.0.1-main.1) (2023-03-17)
 
 
