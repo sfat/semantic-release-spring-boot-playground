@@ -11,12 +11,6 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/exec",
-      {
-        "prepareCmd": "./bin/build_release ${nextRelease.version} \"${nextRelease.notes}\""
-      }
-    ],
-    [
       "@semantic-release/changelog",
       {
         "changelogFile": "CHANGELOG.md"
