@@ -1,0 +1,15 @@
+on:
+  release:
+    types: [published]
+
+jobs:
+  download-release-asset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: robinraju/release-downloader@v1.7
+        with:
+          tag: ${{ github.event.release.name }}
+          fileName: '*.jar'
+          out-file-path: 'build/libs'
+      - name: List contents in build/libs
+        run: ls -larh build/libs

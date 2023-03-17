@@ -2,7 +2,7 @@ name: Main Workflow
 
 on:
   push:
-    branches: [ main,prod ]
+    branches: [ main ]
 # Avoid running multiple pipelines concurrently to avoid overlapping releases and tags
 concurrency:
   group: project
