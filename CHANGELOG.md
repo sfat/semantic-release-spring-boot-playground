@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.0...1.1.1) (2023-03-17)
+
+
+### Bug Fixes
+
+* added semantic-release-backmerge and generate CHANGELOG.md only for prod branch ([0c10d33](https://github.com/sfat/semantic-release-spring-boot-playground/commit/0c10d3315160670a2fc738801c7ef213ff40f803))
+
 # [1.1.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.0...1.1.0) (2023-03-17)
 
 
