@@ -36,7 +36,7 @@ jobs:
         with:
           name: jar
           path: 'build/libs/'
-  publish-and-release:
+  release:
     needs: build
     runs-on: ubuntu-latest
     steps:
@@ -45,18 +45,14 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.PAT }}
-      - uses: actions/setup-java@v3
-        with:
-          distribution: corretto
-          java-version: 17
-      - name: Setup Gradle
-        uses: gradle/gradle-build-action@v2
       - name: Pull the Build cache bringing artifact from the upstream Build job
         uses: actions/cache@v3
         with:
           path: |
             build/
           key: build-${{ github.run_id }}
+      - run: ls -l
+      - run: ls -l build/
       - uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
