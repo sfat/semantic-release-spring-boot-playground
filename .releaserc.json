@@ -17,7 +17,8 @@
       {
         "assets": [
           {
-            "path": "build/*.jar",
+            "path": "build/libs/semantic-release-spring-boot-playground.jar",
+            "name": "semantic-release-spring-boot-playground-(${nextRelease.version}).jar",
             "label": "semantic-release-spring-boot-playground-(${nextRelease.version}).jar"
           }
         ]

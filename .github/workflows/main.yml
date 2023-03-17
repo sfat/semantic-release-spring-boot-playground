@@ -51,8 +51,6 @@ jobs:
           path: |
             build/
           key: build-${{ github.run_id }}
-      - run: ls -l
-      - run: ls -l build/
       - uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
