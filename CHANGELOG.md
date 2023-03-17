@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.2...1.0.3) (2023-03-17)
+
+
+### Bug Fixes
+
+* fix artifact released ([cfd624a](https://github.com/sfat/semantic-release-spring-boot-playground/commit/cfd624a2fc70351788773bd29bb79eec02757e04))
+
 ## [1.0.2](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.1...1.0.2) (2023-03-17)
 
 
