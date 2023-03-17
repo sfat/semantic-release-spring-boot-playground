@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.1...1.0.2) (2023-03-17)
+
+
+### Bug Fixes
+
+* remove artifact debug and add proper asset for jar ([cc6e2da](https://github.com/sfat/semantic-release-spring-boot-playground/commit/cc6e2da78c90dc8c2c58d34872f76d5c424d8567))
+
 ## [1.0.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.0...1.0.1) (2023-03-17)
 
 
