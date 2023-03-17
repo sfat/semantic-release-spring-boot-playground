@@ -36,13 +36,6 @@
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}",
         "branch": "prod"
       }
-    ],
-    [
-      "@saithodev/semantic-release-backmerge",
-      {
-        "backmergeBranches": [{"from": "prod", "to": "main"}],
-        "clearWorkspace": true
-      }
     ]
   ]
 }

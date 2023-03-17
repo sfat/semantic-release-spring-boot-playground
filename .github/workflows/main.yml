@@ -60,7 +60,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
-      - run: npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git @semantic-release/release-notes-generator @saithodev/semantic-release-backmerge
+      - run: npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git @semantic-release/release-notes-generator
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
