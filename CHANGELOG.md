@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.0...1.1.1) (2023-03-22)
+
+
+### Bug Fixes
+
+* ditch PAT ([193e229](https://github.com/sfat/semantic-release-spring-boot-playground/commit/193e229925d409db5fac4edeeab0bbc33cba01dd))
+* ditch PAT ([85cbc7d](https://github.com/sfat/semantic-release-spring-boot-playground/commit/85cbc7d70cf0136f9ca10fe78172d9161b397488))
+
 # [1.1.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.0.3...1.1.0) (2023-03-17)
 
 
