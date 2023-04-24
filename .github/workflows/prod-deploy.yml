@@ -13,7 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        ref: ${{ github.event.inputs.version }}
+        with:
+          ref: ${{ github.event.inputs.version }}
       - uses: gradle/gradle-build-action@v2
       - name: Build
         run: ./gradlew bootJar
