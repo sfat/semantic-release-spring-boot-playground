@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.1...1.1.2) (2023-04-24)
+
+
+### Bug Fixes
+
+* don't upload artifacts on GitHub ([66843b1](https://github.com/sfat/semantic-release-spring-boot-playground/commit/66843b1ab55a51e4017fb78f76443e0cf64b38f6))
+
 ## [1.1.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.0...1.1.1) (2023-03-22)
 
 
