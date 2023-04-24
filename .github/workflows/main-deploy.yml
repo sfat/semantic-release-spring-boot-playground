@@ -9,6 +9,10 @@ jobs:
       - uses: actions/checkout@v3
         with:
           ref: ${{ github.event.release.name }}
+      - uses: actions/setup-java@v3
+        with:
+          distribution: corretto
+          java-version: 17
       - uses: gradle/gradle-build-action@v2
       - name: Build
         run: ./gradlew bootJar
