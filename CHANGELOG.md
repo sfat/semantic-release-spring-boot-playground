@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.2...1.1.3) (2023-04-24)
+
+
+### Bug Fixes
+
+* add @semantic-release/github in releaserc.json ([84da693](https://github.com/sfat/semantic-release-spring-boot-playground/commit/84da693aa002d951522772bc574e426ebcd1d797))
+
 ## [1.1.2](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.1...1.1.2) (2023-04-24)
 
 
