@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.4...1.1.5) (2023-04-24)
+
+
+### Bug Fixes
+
+* add java github action ([fef8af8](https://github.com/sfat/semantic-release-spring-boot-playground/commit/fef8af843f9ace191ea48c7e766b4852b45b8340))
+
 ## [1.1.4](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.3...1.1.4) (2023-04-24)
 
 
