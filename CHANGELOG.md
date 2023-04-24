@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.3...1.1.4) (2023-04-24)
+
+
+### Bug Fixes
+
+* fix checkout for specific tag ([e1e5c7b](https://github.com/sfat/semantic-release-spring-boot-playground/commit/e1e5c7b85b30239eced4add5ac32023757fae9ed))
+
 ## [1.1.3](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.2...1.1.3) (2023-04-24)
 
 
