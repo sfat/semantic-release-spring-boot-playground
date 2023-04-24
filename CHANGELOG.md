@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.5...1.1.6) (2023-04-24)
+
+
+### Bug Fixes
+
+* release ([f959e34](https://github.com/sfat/semantic-release-spring-boot-playground/commit/f959e3439b33a7fb010349eff16a3fe22ac97829))
+
 ## [1.1.5](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.4...1.1.5) (2023-04-24)
 
 
