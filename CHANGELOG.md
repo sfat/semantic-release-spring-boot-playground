@@ -1,3 +1,14 @@
+## [1.1.8](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.7...1.1.8) (2023-11-03)
+
+
+### Bug Fixes
+
+* add github-app-token gh action ([007fe91](https://github.com/sfat/semantic-release-spring-boot-playground/commit/007fe910c5da3be7402f8a6fbf1bec575a54d420))
+* add github-app-token gh action ([afb8bf1](https://github.com/sfat/semantic-release-spring-boot-playground/commit/afb8bf1b59d1b45280631cb9178a40910e9f878a))
+* add github-app-token gh action ([6116c3e](https://github.com/sfat/semantic-release-spring-boot-playground/commit/6116c3e9689b2a3cf3251f7fd04d1830e87419f4))
+* add github-app-token gh action ([2da0dd0](https://github.com/sfat/semantic-release-spring-boot-playground/commit/2da0dd0cadc54b16a54fe0441b52c0ed6e8f05db))
+* test fix ([4ec6804](https://github.com/sfat/semantic-release-spring-boot-playground/commit/4ec68044e62839e7d311e032285e88b14dc7cb94))
+
 ## [1.1.7](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.6...1.1.7) (2023-04-24)
 
 
