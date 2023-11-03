@@ -10,15 +10,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      gh_app_token: ${{ steps.create_token.outputs.token }}
     steps:
-      - id: create_token
-        uses: tibdex/github-app-token@v2
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.PRIVATE_KEY }}
-      - run: "echo 'The created token is masked: ${{ steps.create_token.outputs.token }}'"
       - name: Git checkout
         uses: actions/checkout@v3
         with:
@@ -39,17 +31,21 @@ jobs:
       issues: write
       pull-requests: write
     steps:
+      - id: create_token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
       - name: Git checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - run: "echo 'The created token is masked2: ${{ needs.build.outputs.gh_app_token }}'"
       - uses: actions/setup-node@v3
         with:
           node-version: "lts/*"
       - run: npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git @semantic-release/release-notes-generator
       - name: Release
         env:
-          GH_TOKEN: ${{ needs.build.outputs.gh_app_token }}
-          GITHUB_TOKEN: ${{ needs.build.outputs.gh_app_token }}
+          GH_TOKEN: ${{ steps.create_token.outputs.token }}
+          GITHUB_TOKEN: ${{ steps.create_token.outputs.token }}
         run: npx semantic-release
