@@ -27,7 +27,7 @@ jobs:
           echo "image_version=$image_version" >> $GITHUB_OUTPUT
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.inputs.version }}
+          ref: ${{ steps.sanitize_version.outputs.trimmed_input }}
       - uses: actions/setup-java@v4
         with:
           distribution: corretto
