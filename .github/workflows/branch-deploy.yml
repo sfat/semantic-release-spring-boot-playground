@@ -23,7 +23,16 @@ jobs:
         run: |
           trimmed_input=$(echo "${{ github.event.inputs.version }}" | tr -d '[:space:]')
           echo "trimmed_input=$trimmed_input" >> $GITHUB_OUTPUT
-          image_version="${trimmed_input//\//-}-${{ github.run_number }}"
+          # Regular expression for semantic versioning
+          semver_regex="^[0-9]+\.[0-9]+\.[0-9]+$"
+
+          if [[ $trimmed_input =~ $semver_regex ]]; then
+            # If it's a semantic version, just replace slashes with dashes
+            image_version="${trimmed_input//\//-}"
+          else
+            # If it's a branch, replace slashes with dashes and append the run number
+            image_version="${trimmed_input//\//-}-${{ github.run_number }}"
+          fi
           echo "image_version=$image_version" >> $GITHUB_OUTPUT
       - uses: actions/checkout@v4
         with:
