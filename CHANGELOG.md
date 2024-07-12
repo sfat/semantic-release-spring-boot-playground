@@ -3,6 +3,7 @@
 ### Features
 
 * feature q ([7548bae](https://github.com/sfat/semantic-release-spring-boot-playground/commit/7548baed0364817db0cdbcb8e9e0c28dac9ab1d7))
+* feature 2 ([a83a058](https://github.com/sfat/semantic-release-spring-boot-playground/commit/a83a058726206177e67fab67a0d16cee72a30f35))
 
 ## [1.1.9](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.8...1.1.9) (2024-07-12)
 
