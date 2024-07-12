@@ -7,4 +7,6 @@ Integrate semantic-releases for Spring Boot applications
 
 # feature
 
+# fix
+
 ## Testing
