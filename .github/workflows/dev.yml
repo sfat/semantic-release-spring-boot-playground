@@ -1,12 +1,9 @@
-name: Main Workflow
+name: Dev Workflow
 
 on:
   push:
-    branches: [ main ]
-# Avoid running multiple pipelines concurrently to avoid overlapping releases and tags
-concurrency:
-  group: project
-  cancel-in-progress: false
+    branches: [ dev ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -49,3 +46,23 @@ jobs:
           GH_TOKEN: ${{ steps.create_token.outputs.token }}
           GITHUB_TOKEN: ${{ steps.create_token.outputs.token }}
         run: npx semantic-release
+
+  docker-build-and-push:
+    needs: release
+    runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: ${{ secrets.DEV_ECR_REPOSITORY_URL }}/repository/my-service
+    steps:
+      # ... (similar to your current docker build job)
+      - name: Get version
+        id: get_version
+        run: echo "VERSION=$(git describe --tags --abbrev=0)" >> $GITHUB_OUTPUT
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          provenance: false
+          tags: |
+            ${{ env.IMAGE_NAME }}:${{ steps.get_version.outputs.VERSION }}
+            ${{ env.IMAGE_NAME }}:${{ steps.get_version.outputs.VERSION }}-${{ github.run_number }}
