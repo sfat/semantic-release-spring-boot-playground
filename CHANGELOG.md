@@ -1,3 +1,9 @@
+## [1.2.0-dev.2](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.2.0-dev.1...1.2.0-dev.2) (2024-07-12)
+
+### Bug Fixes
+
+* fix q ([1dfd3de](https://github.com/sfat/semantic-release-spring-boot-playground/commit/1dfd3dec379e1ba0279f03e54062060bfcdf66c1))
+
 ## [1.2.0-dev.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.8...1.2.0-dev.1) (2024-07-12)
 
 ### Features
