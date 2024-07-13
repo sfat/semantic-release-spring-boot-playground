@@ -3,19 +3,27 @@ name: Sync Dev with Main
 on:
   release:
     types: [published]
+permissions:
+  # Needed to read branches
+  contents: read
+  # Needed to create PR's
+  pull-requests: write
 
 jobs:
-  sync-dev:
+  sync-branches:
     runs-on: ubuntu-latest
+    name: Syncing branches
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Sync branches
-        uses: TreTuna/sync-branches@1.4.0
+          node-version: 20
+      - name: Opening pull request
+        id: pull
+        uses: jdtx0/branch-sync@1.5.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FROM_BRANCH: "main"
-          TO_BRANCH: "dev"
+          TO_BRANCH: "develop"
