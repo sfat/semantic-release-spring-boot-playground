@@ -23,10 +23,14 @@ const config = {
         "preset": "conventionalcommits"
       }
     ],
+    "@semantic-release/github",
     [
-      "@semantic-release/changelog",
+      "@semantic-release/git",
       {
-        "changelogFile": "CHANGELOG.md"
+        "assets": [
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ]
   ]
@@ -41,11 +45,8 @@ const isPrereleaseBranch = config.branches.some(
 
 if (!isPrereleaseBranch) {
   config.plugins.push('@semantic-release/changelog', [
-    '@semantic-release/git',
     {
-      assets: ['package.json', 'package-lock.json', 'CHANGELOG.md'],
-      message:
-          'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
+      "changelogFile": "CHANGELOG.md"
     },
   ])
 }
