@@ -1,3 +1,6 @@
+/**
+ * @type {import('semantic-release').GlobalConfig}
+ */
 const ref = process.env.GITHUB_REF
 const branch = ref.split('/').pop()
 
@@ -27,7 +30,7 @@ const config = {
       }
     ]
   ]
-}
+};
 
 const isPrereleaseBranch = config.branches.some(
     (b) =>
@@ -47,4 +50,4 @@ if (!isPrereleaseBranch) {
   ])
 }
 
-export default config
+module.exports = config;
