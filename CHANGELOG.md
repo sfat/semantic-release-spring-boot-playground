@@ -1,26 +1,28 @@
-## [1.2.0-dev.4](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.2.0-dev.3...1.2.0-dev.4) (2024-07-12)
+## [1.3.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.2.0...1.3.0) (2024-07-12)
 
-### Features
-
-* feature 3 ([398a245](https://github.com/sfat/semantic-release-spring-boot-playground/commit/398a2456dc436dccd212f92667e9de427ac96f4c))
-
-## [1.2.0-dev.3](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.2.0-dev.2...1.2.0-dev.3) (2024-07-12)
 
 ### Features
 
 * feature 2 ([a83a058](https://github.com/sfat/semantic-release-spring-boot-playground/commit/a83a058726206177e67fab67a0d16cee72a30f35))
-
-## [1.2.0-dev.2](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.2.0-dev.1...1.2.0-dev.2) (2024-07-12)
+* feature 3 ([398a245](https://github.com/sfat/semantic-release-spring-boot-playground/commit/398a2456dc436dccd212f92667e9de427ac96f4c))
+* feature q ([78d2fab](https://github.com/sfat/semantic-release-spring-boot-playground/commit/78d2fab5dfba5a4c45969a806545b99b0cf778de))
 
 ### Bug Fixes
 
 * fix q ([1dfd3de](https://github.com/sfat/semantic-release-spring-boot-playground/commit/1dfd3dec379e1ba0279f03e54062060bfcdf66c1))
 
-## [1.2.0-dev.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.8...1.2.0-dev.1) (2024-07-12)
+## [1.2.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.9...1.2.0) (2024-07-12)
 
 ### Features
 
-* feature q ([78d2fab](https://github.com/sfat/semantic-release-spring-boot-playground/commit/78d2fab5dfba5a4c45969a806545b99b0cf778de))
+* feature q ([7548bae](https://github.com/sfat/semantic-release-spring-boot-playground/commit/7548baed0364817db0cdbcb8e9e0c28dac9ab1d7))
+* feature 2 ([a83a058](https://github.com/sfat/semantic-release-spring-boot-playground/commit/a83a058726206177e67fab67a0d16cee72a30f35))
+
+## [1.1.9](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.8...1.1.9) (2024-07-12)
+
+### Bug Fixes
+
+* fix q ([22eb4ea](https://github.com/sfat/semantic-release-spring-boot-playground/commit/22eb4ea1fce174ee2ea512234820c86cd5b48f60))
 
 ## [1.1.8](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.1.7...1.1.8) (2023-11-03)
 
