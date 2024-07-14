@@ -13,6 +13,8 @@ Integrate semantic-releases for Spring Boot applications
 
 # feature 4
 
+# feature 5
+
 # fix
 
 # fix2
