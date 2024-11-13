@@ -41,7 +41,7 @@ jobs:
         with:
           distribution: corretto
           java-version: 21
-      - uses: gradle/gradle-build-action@v2.11.0
+      - uses: gradle/gradle-build-action@v3
       - name: Build jar
         run: ./gradlew bootJar
       - uses: docker/setup-qemu-action@v3
