@@ -13,7 +13,7 @@
 
     <groupId>me.sfat</groupId>
     <artifactId>semantic-release-spring-boot-playground</artifactId>
-    <version>1.7.4</version>
+    <version>1.7.5</version>
     <name>semantic-release-spring-boot-playground</name>
     <description>Playground project for semantic release with Spring Boot</description>
 
