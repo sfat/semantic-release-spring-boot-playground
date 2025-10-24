@@ -37,14 +37,9 @@ jobs:
         with:
           node-version: "lts/*"
       - run: npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git @semantic-release/release-notes-generator conventional-changelog-conventionalcommits gradle-semantic-release-plugin
-      - name: Create Maven settings
-        run: |
-          echo '<settings><servers><server>' > settings.xml
-          echo "<id>github</id>" >> settings.xml
-          echo "<username>${{ github.actor }}</username>" >> settings.xml
-          echo "<password>${{ secrets.GITHUB_TOKEN }}</password>" >> settings.xml
-          echo '</server></servers></settings>' >> settings.xml
       - name: Release
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          MAVEN_USERNAME: ${{ github.actor }}
+          MAVEN_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
