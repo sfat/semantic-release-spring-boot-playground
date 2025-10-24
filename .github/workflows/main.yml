@@ -33,7 +33,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
       - name: Build and Test
         run: ./gradlew build
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: "lts/*"
       - run: npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git @semantic-release/release-notes-generator conventional-changelog-conventionalcommits gradle-semantic-release-plugin
