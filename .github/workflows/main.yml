@@ -30,6 +30,7 @@ jobs:
       contents: write
       issues: write
       pull-requests: write
+      packages: write
     steps:
       - id: create_token
         uses: tibdex/github-app-token@v2
@@ -53,5 +54,5 @@ jobs:
           GH_TOKEN: ${{ steps.create_token.outputs.token }}
           GITHUB_TOKEN: ${{ steps.create_token.outputs.token }}
           MAVEN_USERNAME: ${{ github.actor }}
-          MAVEN_PASSWORD: ${{ steps.create_token.outputs.token }}
+          MAVEN_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
