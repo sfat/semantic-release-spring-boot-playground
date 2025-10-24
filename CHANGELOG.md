@@ -1,3 +1,9 @@
+## [1.7.4](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.7.3...1.7.4) (2025-10-24)
+
+### Bug Fixes
+
+* maven deploy ([c7820eb](https://github.com/sfat/semantic-release-spring-boot-playground/commit/c7820eb42e7b09b0535219ad5f3ce4f1ef49fe4a))
+
 ## [1.7.3](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.7.2...1.7.3) (2025-10-24)
 
 ### Bug Fixes
