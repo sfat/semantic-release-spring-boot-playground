@@ -29,6 +29,9 @@ jobs:
         with:
           distribution: corretto
           java-version: 21
+          server-id: github
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
       - name: Build and Test
@@ -40,4 +43,5 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          GITHUB_ACTOR: ${{ github.actor }}
         run: npx semantic-release
