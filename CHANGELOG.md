@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.5.0...1.6.0) (2025-10-24)
+
+### Features
+
+* add maven support ([4954859](https://github.com/sfat/semantic-release-spring-boot-playground/commit/4954859f04e50ca7bc05f651ee381526111eee83))
+
 ## [1.3.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.2.0...1.3.0) (2024-07-12)
 
 
