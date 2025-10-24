@@ -1,3 +1,9 @@
+## [1.7.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.6.0...1.7.0) (2025-10-24)
+
+### Features
+
+* add maven distributionManagement ([0d6ba73](https://github.com/sfat/semantic-release-spring-boot-playground/commit/0d6ba73bb6b6a5efd8169d83a10a0b2d7814d699))
+
 ## [1.6.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.5.0...1.6.0) (2025-10-24)
 
 ### Features
