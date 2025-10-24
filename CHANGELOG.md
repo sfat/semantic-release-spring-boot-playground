@@ -1,3 +1,9 @@
+## [1.7.2](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.7.1...1.7.2) (2025-10-24)
+
+### Bug Fixes
+
+* change MAVEN_PASSWORD and add package permission ([32a40e1](https://github.com/sfat/semantic-release-spring-boot-playground/commit/32a40e1a113fcd99e8144274dd8d07b847fa9e3b))
+
 ## [1.7.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.7.0...1.7.1) (2025-10-24)
 
 ### Bug Fixes
