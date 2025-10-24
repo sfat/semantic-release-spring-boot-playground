@@ -48,4 +48,6 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.create_token.outputs.token }}
           GITHUB_TOKEN: ${{ steps.create_token.outputs.token }}
+          MAVEN_USERNAME: ${{ github.actor }}
+          MAVEN_PASSWORD: ${{ steps.create_token.outputs.token }}
         run: npx semantic-release
