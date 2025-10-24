@@ -1,3 +1,9 @@
+## [1.7.1](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.7.0...1.7.1) (2025-10-24)
+
+### Bug Fixes
+
+* add java 21 setup-java step ([feff39b](https://github.com/sfat/semantic-release-spring-boot-playground/commit/feff39b75e4af4c7faa3e8fdcc2f19dca856c0b7))
+
 ## [1.7.0](https://github.com/sfat/semantic-release-spring-boot-playground/compare/1.6.0...1.7.0) (2025-10-24)
 
 ### Features
